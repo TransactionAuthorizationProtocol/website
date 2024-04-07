@@ -9,8 +9,29 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  {{ content }}
+<header class="bg-white">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="/" class="-m-1.5 p-1.5 flex flex-row sm:flex-col">
+        <span class="text-md font-black">TAP</span> 
+        <span class="text-md font-light">The Transaction Authorization Protocol for public blockchains</span>
+      </a>
+    </div>
+    <div class="lg:flex lg:gap-x-12">
+      <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+      <a href="/TAIPs" class="text-sm font-semibold leading-6 text-gray-900">TAIPs</a>
+    </div>
+  </nav>
+</header>
 
-  <footer>footer</footer>
+    <main class="bg-white">
+      <div class="mx-auto max-w-2xl text-base leading-7 text-gray-700">
+        {{ content }}
+      </div>
+    </main>
+
+  <footer class="py-16 mx-auto max-w-2xl">
+    &copy; 2024 <a href="https://notabene.id">Notabene, Inc.</a>
+  </footer>
 </body>
 </html>

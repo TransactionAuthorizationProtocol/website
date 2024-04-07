@@ -14,15 +14,6 @@ export function Hero() {
         />
       </div>
       <div className="mx-auto max-w-2xl py-8 sm:py-12 lg:py-14">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Notabene announces support for TAP{" "}
-            <a href="#" className="font-semibold text-indigo-600">
-              <span className="absolute inset-0" aria-hidden="true" />
-              Read more <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Safe and compliant real-world transactions on any public blockchain
@@ -39,10 +30,10 @@ export function Hero() {
               Read the TAP Whitepaper
             </a>
             <a
-              href="#"
+              href="/TAIPs/taip-4"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Learn more <span aria-hidden="true">→</span>
+              Read the standards <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
