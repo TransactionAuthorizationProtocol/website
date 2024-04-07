@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ 
+    startOnLoad: false,
+    });
+    await mermaid.run({
+      querySelector: 'pre code.language-mermaid',
+    });
+  </script>
+</head>
+<body class="container mx-auto bg-white">
+    <header class="bg-white py-16 sm:py-24">
+            <div class="mx-auto max-w-2xl">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                <p class="text-base font-semibold leading-7 text-indigo-600">TAIP-{{taip}}</p>
+                <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{title}}</h2>
+
+                {{if requires}}
+                <div class="mt-4">
+                    <p class="text-base leading-7 text-indigo-600">Requires: <span></span></p>
+                    <nav  class="flex space-x-4">
+                {{for r of (Number.isInteger(requires) ? [requires]: requires.split(/,\s*/))}}
+                        <a class="bg-gray-200 text-gray-800 rounded-md px-3 py-2 text-sm font-medium" href="./taip-{{r}}">{{r}}</a>
+                {{/for}}
+                    </nav>
+                {{/if}}
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-white">
+      <div class="mx-auto max-w-2xl text-base leading-7 text-gray-700">
+        <article class="prose prose-neutral prose-pre:bg-gray-200 prose-code:text-black">
+            {{ content }}
+        </article>
+      </div>
+    </main>
+
+    <footer class="mx-auto max-w-2xl py-16">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+        <a property="dct:title" rel="cc:attributionURL" href="https://tap.rsvp">Transaction Authorization Protocol</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://notabene.id">Notabene, Inc.</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0
+        <img style="height:22px!important;margin-left:3px;display:inline;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+        <img style="height:22px!important;margin-left:3px;display:inline;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+        <img style="height:22px!important;margin-left:3px;display:inline;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+    </footer>
+</body>
+</html>
