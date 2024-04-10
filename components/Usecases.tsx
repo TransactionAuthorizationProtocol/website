@@ -15,19 +15,19 @@ const usecases = [
   {
     name: "Post-trade settlement",
     description:
-      "Ensure that your customers' transactions arrive at the correct destination without loss or theft of funds.",
+      "Ensure that trading transactions on modern non-custodial exchanges are settled securely and rapidly by third-party custodian.",
     icon: ArrowPathRoundedSquareIcon,
   },
   {
     name: "B2B Payments",
     description:
-      "Record keeping for accounting, order fulfillment, and regulatory compliance purposes.",
+      "Instantly settled cross border payments that are tied to your customers, suppliers, and invoices not opaque blockchain addresses.",
     icon: BuildingOffice2Icon,
   },
   {
     name: "E-Commerce Payments",
     description:
-      "Replace confusing and insecure blockchain addresses with your customer's real-world counterparts.",
+      "Securely and privately share merchant, invoice, and customer information to safely enable e-commerce payments using stablecoins",
     icon: BuildingStorefrontIcon,
   },
 ];
