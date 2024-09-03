@@ -76,7 +76,7 @@ The following example shows its use in a [TAIP-3] message:
     "originator": {
       "@id": "did:web:originator.sample"
     },
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "agents": [
       {
         "@id": "did:web:originator.sample"
@@ -380,7 +380,7 @@ customer is asking to transfer funds to a blockchain address:
       "@id": "did:eg:bob"
     },
     "asset": "eip155:1/slip44:60",
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "settlementId": "eip155:1:tx/0x3edb98c24d46d148eb926c714f4fbaa117c47b0c0821f38bfce9763604457c33",
     "agents": [
       {
@@ -421,7 +421,7 @@ Address:
       "@id": "did:eg:alice"
     },
     "asset": "eip155:1/slip44:60",
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "settlementId": "eip155:1:tx/0x3edb98c24d46d148eb926c714f4fbaa117c47b0c0821f38bfce9763604457c33",
     "agents": [
       {
@@ -475,7 +475,7 @@ goes to the customer's own self-hosted wallet address:
       "@id": "did:eg:bob"
     },
     "asset": "eip155:1/slip44:60",
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "settlementId": "eip155:1:tx/0x3edb98c24d46d148eb926c714f4fbaa117c47b0c0821f38bfce9763604457c33",
     "agents": [
       {

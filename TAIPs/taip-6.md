@@ -175,7 +175,7 @@ transaction::
       "@id": "did:eg:bob"
     },
     "asset": "eip155:1/slip44:60",
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "settlementId": "eip155:1:tx/0x3edb98c24d46d148eb926c714f4fbaa117c47b0c0821f38bfce9763604457c33",
     "agents": [
       {
@@ -216,7 +216,7 @@ Address. It now has all the required information to complete it:
       "@id": "did:eg:alice"
     },
     "asset": "eip155:1/slip44:60",
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "settlementId": "eip155:1:tx/0x3edb98c24d46d148eb926c714f4fbaa117c47b0c0821f38bfce9763604457c33",
     "agents": [
       {
@@ -266,7 +266,7 @@ goes to the customer’s self-hosted wallet address:
       "@id": "did:eg:bob"
     },
     "asset": "eip155:1/slip44:60",
-    "amountSubunits": "1230000000000000000",
+    "amount": "1.23",
     "settlementId": "eip155:1:tx/0x3edb98c24d46d148eb926c714f4fbaa117c47b0c0821f38bfce9763604457c33",
     "agents": [
       {
