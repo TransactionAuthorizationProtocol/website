@@ -19,7 +19,7 @@ export function Hero() {
             Safe and compliant real-world transactions on any public blockchain
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Crypto’s first private decentralized payment messaging protocol for
+            Crypto's first private decentralized payment messaging protocol for
             VASPs financial institutions, DeFi, and Self-hosted wallets
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -28,6 +28,12 @@ export function Hero() {
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Read the TAP Whitepaper
+            </a>
+            <a
+              href="/tap-overview.md"
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
+              Technical Overview <span aria-hidden="true">→</span>
             </a>
             <a
               href="/TAIPs/taip-4"
