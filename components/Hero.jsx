@@ -29,14 +29,6 @@ export default function Hero({ title, subtitle, children }) {
             <p class="mt-6 text-lg leading-8 text-text-muted">
               {subtitle}
             </p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="/intro.html" class="btn-primary">
-                Introduction <span aria-hidden="true" class="ml-1">→</span>
-              </a>
-              <a href="/tap-overview.html" class="btn-secondary">
-                Technical Overview <span aria-hidden="true" class="ml-1">→</span>
-              </a>
-            </div>
             <div class="mt-8 flex items-center justify-center gap-x-6">
               <a href="https://docs.google.com/document/d/1z16nPRjiCFGsnMqr7GiBRMCMMPBG6laaS337s4oJrEw/edit#heading=h.qhpcmvla2cvr#" class="btn-secondary">
                 Read the TAP Whitepaper <span aria-hidden="true" class="ml-1">→</span>
