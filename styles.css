@@ -1,7 +1,167 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Sans:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&family=Fira+Code:wght@400;500;600;700&display=swap');
+
+/* Tailwind directives - using comments to help lint checker understand */
+/* tailwind base */
 @tailwind base;
+/* tailwind components */
 @tailwind components;
+/* tailwind utilities */
 @tailwind utilities;
 
+/* Custom styles that don't rely on @apply */
+:root {
+  --color-primary: rgb(65, 224, 41); /* Bright green */
+  --color-primary-dark: rgb(53, 188, 31); /* Darker green */
+  --color-secondary: rgb(240, 253, 237); /* Light green background */
+  --color-text-primary: hsl(215, 25%, 27%);
+  --color-text-muted: hsl(215, 15%, 47%);
+}
+
+body {
+  font-family: 'Roboto Sans', sans-serif;
+  color: var(--color-text-primary);
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  color: var(--color-primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+code, pre {
+  font-family: 'Fira Code', monospace;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--color-text-primary);
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+/* Custom utility classes that enhance Tailwind */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.text-text-primary {
+  color: var(--color-text-primary) !important;
+}
+
+.text-text-muted {
+  color: var(--color-text-muted) !important;
+}
+
+.border-primary {
+  border-color: var(--color-primary) !important;
+}
+
+.hover-text-primary:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Add green accents to links in content */
+.prose a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: rgba(65, 224, 41, 0.4);
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--color-primary);
+}
+
+ul li::before {
+  content: "• ";
+  color: rgb(65, 224, 41);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+th {
+  border-bottom: 2px solid rgb(65, 224, 41);
+  padding: 0.5rem;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+}
+
+td {
+  border-bottom: 1px solid hsl(214.3, 31.8%, 91.4%);
+  padding: 0.5rem;
+}
+
+/* Code block styling */
+pre {
+  background-color: hsl(111, 77%, 96%);
+  border-left: 4px solid rgb(65, 224, 41);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
 .prose pre code.language-mermaid {
-    background-color: white !important;
+  background-color: white !important;
 }

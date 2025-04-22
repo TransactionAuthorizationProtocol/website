@@ -16,6 +16,8 @@ site.use(
     options: {
       plugins: [typography],
     },
+    // Ensure Tailwind processes all necessary file types
+    includes: "styles.css",
   })
 );
 site.use(postcss());
