@@ -30,7 +30,7 @@ export default function Hero({ title, subtitle, children }) {
             </h1>
             <p class="mt-6 text-lg leading-8 text-text-muted">{subtitle}</p>
             <div class="mt-8 flex items-center justify-center gap-x-6">
-              <a href="https://hubs.ly/Q03BPp1k0" class="btn-secondary">
+              <a href="https://hubs.ly/Q03FRgly0" class="btn-secondary">
                 Read the TAP Whitepaper{" "}
                 <span aria-hidden="true" class="ml-1">
                   →
