@@ -1,4 +1,9 @@
-import { CubeTransparentIcon, DocumentTextIcon, LockOpenIcon, UserGroupIcon } from "npm:@heroicons/react/24/outline";
+import {
+  CubeTransparentIcon,
+  DocumentTextIcon,
+  LockOpenIcon,
+  UserGroupIcon,
+} from "npm:@heroicons/react/24/outline";
 
 const features = [
   {
@@ -27,7 +32,7 @@ export function Open() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-text-primary">
-          Fully Open and Public Domain
+            Fully Open and Public Domain
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
             Transparent and fair
